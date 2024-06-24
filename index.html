@@ -1,0 +1,22 @@
+<style>
+h1{
+position:absolute; top:300; left:600;
+font-family:fantasy;
+font-size:50px;
+}
+</style>
+
+<body>
+<h1 id="h1"></h1>
+</body>
+
+<script>
+setInterval(fun,1000);
+function fun()
+{
+d=new Date();
+h=d.toLocaleTimeString();
+s=document.getElementById("h1");
+s.innerText=h;
+}
+</script>
